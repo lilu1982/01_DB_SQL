@@ -1,8 +1,8 @@
-/* ------  Strukturen NOT NULL / DEFAULT ----- */
+/* ------  Strukturen UNIQUE ----- */
 
 /* 	 
-	NULL wird nicht mehr zugelassen
-    DEFAULT-Werte eintragen
+	Doppelte DS werden nicht mehr zugelassen
+    UNIQUE
 */
 
 /* DB boo löschen, falls vorhanden*/
@@ -18,7 +18,8 @@ CREATE DATABASE IF NOT EXISTS boo;
 /* Tabelle anlegen, falls noch nicht vorhanden */
 CREATE TABLE IF NOT EXISTS boo.test
 (
-    name VARCHAR(20) NOT NULL DEFAULT "TBA",
+    -- Constraint: UNIQUE
+    name VARCHAR(20) NOT NULL UNIQUE DEFAULT "TBA",
     age INT NOT NULL DEFAULT 0
 );
 
@@ -32,7 +33,7 @@ INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
 INSERT INTO boo.test VALUES ();
 
 -- Doppelte Datensätze werden zugelassen !
-INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
+INSERT INTO boo.test(age,name) VALUES (35,"Alonzo der Coole");
 
 
 /* Inhalte der Tabelle anzeigen */
