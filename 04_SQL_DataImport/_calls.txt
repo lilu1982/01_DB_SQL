@@ -1,3 +1,0 @@
-/* calls */
-
-source 04_SQL_DataImport/04_db_csv_import.sql
