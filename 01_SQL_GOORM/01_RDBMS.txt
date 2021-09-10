@@ -12,3 +12,7 @@ mysql-ctl cli;
 
 // MySQL DB-CLI exit
 exit
+
+sudo service mysql start;
+
+
