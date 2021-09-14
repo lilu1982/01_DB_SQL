@@ -17,6 +17,6 @@ SELECT
     industry AS "Branche"
 FROM stocks.ccc
 # LIMIT 5 -- 5 Zeilen ab 0
-LIMIT 200,20 -- 10 Zeilen ab 200
+LIMIT 200,10 -- 10 Zeilen ab 200
 ;
     
