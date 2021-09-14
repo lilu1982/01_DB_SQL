@@ -4,7 +4,7 @@
 DROP DATABASE IF EXISTS stocks;
 CREATE DATABASE IF NOT EXISTS stocks;
 
-/* Tabelle cats*/
+/* Tabelle stocks*/
 
 DROP TABLE IF EXISTS stocks.ccc;
 
